@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+		<!-- jQuery -->
+	<script src="bootstrap-3.3.7-dist/js/jquery.js"></script>
+		<!-- Bootstrap JavaScript -->
+	<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	<style>
+		.col-xs-12.col-md-2.sidebar .nav.nav-sidebar li a{
+			color:#fff;
+		}
+		
+		.col-xs-12.col-md-2.sidebar .nav.nav-sidebar li a:hover{
+			color:#000;
+		}
+		thead tr th{
+			background-color: #000;
+			color:white;
+		}
+		
+		tbody tr:hover{
+			background-color: #3333FF;
+			color:white;
+		}
+	</style>
+</head>
+<body>
+	
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <a class="navbar-brand" href="admin.html">Trang Admin</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#">Bảng điều kiển</a></li>
+            <li><a href="#">Cài đặt</a></li>
+            <li><a href="#">Hồ sơ</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+
+          <form class="navbar-form navbar-right">
+            <input type="text" class="form-control" placeholder="Search...">
+          </form>
+        </div>
+      </div>
+    </nav>
+
+	 <div class="container-fluid">
+      <div class="row">
+        <div style="background: #00a82d;" class="col-xs-12 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="#"><span class="sr-only">(Hiện hành)</span></a></li><!-- lỗi mới hiển thị -->
+            <li><a href="#">Báo cáo</a></li>
+            <li><a href="#">Lưu lượng truy cập</a></li>
+          </ul>
+          <br>
+          <ul class="nav nav-sidebar">
+            <li><a href="">Quản lí nhân viên</a></li>
+            <li><a href="">Quản lí user</a></li>
+       		 <li><a href="">Quản lí bài viết</a></li>
+          </ul>
+          <br>
+          <ul class="nav nav-sidebar">
+            <li><a href="">Quản kho</a></li>
+            <li class="active"><a href="">Quản lí sản phẩm</a></li>
+          </ul>
+        </div><!-- end left -->
+		
+		 <div class="col-xs-12 col-sm-10 col-md-10 main">
+          <h3 class="page-header">Thêm Sản Phẩm</h3>
+			<form class="form-horizontal">
+
+				<div class="form-group">
+					<label for="input" class="col-sm-2 control-label">Mã Sản Phẩm</label>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" placeholder="#abc">
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="input" class="col-sm-2 control-label">Tên Sản Phẩm</label>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" placeholder="tên sản phẩm muốn thêm">
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="input" class="col-sm-2 control-label">Loại Sản Phẩm</label>
+					<div class="col-sm-10">
+						<select class="col-md-10 form-control">
+							<option>Áo</option>
+							<option>Quần</option>
+							<option>Ship</option>
+							<option>Giày</option>
+							<option>Phụ kiện</option>
+						</select>
+					</div>
+				</div>
+
+					<div class="form-group">
+					<label for="input" class="col-sm-2 control-label">Mô Tả</label>
+					<div class="col-sm-10">
+					<textarea class="form-control" rows="3" placeholder="#Viết nội dung ở đây"></textarea>
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label for="input" class="col-sm-2 control-label">Giá Bán</label>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" placeholder="#100k">
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="input" class="col-sm-2 control-label">Giá Khuyến Mãi</label>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" placeholder="#10%~100%">
+					</div>
+				</div>
+
+
+				<div class="form-group">
+					<label for="input" class="col-sm-2 control-label">Ảnh Sản Phẩm</label>
+					<div class="col-sm-10">
+						<input type="file" class="form-control" placeholder="#10%~100%">
+					</div>
+				</div>
+
+				<div class="form-group">
+					<div class="col-sm-offset-2 col-sm-10">
+						<button type="submit" class="btn btn-default">Xong</button>
+					</div>
+				</div>
+			</form><!-- form -->
+        </div><!-- end right -->
+		
+	  </div><!-- end row -->
+
+	
+
+	</div>  <!-- container -->
+</body>
+</html>

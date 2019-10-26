@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Admin</title>
+	<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+		<!-- jQuery -->
+	<script src="bootstrap-3.3.7-dist/js/jquery.js"></script>
+		<!-- Bootstrap JavaScript -->
+	<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	<style>
+		.col-xs-12.col-md-2.sidebar .nav.nav-sidebar li a{
+			color:#fff;
+		}
+		
+		.col-xs-12.col-md-2.sidebar .nav.nav-sidebar li a:hover{
+			color:#000;
+		}
+
+		thead tr th{
+			background-color: #000;
+			color:white !important;
+		}
+		
+		tbody tr:hover{
+			background-color: #3333FF;
+			color:white !important;
+		}
+
+
+	</style>
+</head>
+<body>
+	
+
+
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <a class="navbar-brand" href="trangchu.html">Trang Admin</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#">Bảng điều kiển</a></li>
+            <li><a href="#">Cài đặt</a></li>
+            <li><a href="profile.html">Hồ sơ</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+
+          <form class="navbar-form navbar-right">
+            <input type="text" class="form-control" placeholder="Search...">
+          </form>
+        </div>
+      </div>
+    </nav>
+
+	 <div class="container-fluid">
+      <div class="row">
+        <div style="background: #00a82d;" class="col-xs-12 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="#"><span class="sr-only">(Hiện hành)</span></a></li><!-- lỗi mới hiển thị -->
+            <li><a href="#">Báo cáo</a></li>
+            <li><a href="#">Lưu lượng truy cập</a></li>
+          </ul>
+          
+          <ul class="nav nav-sidebar">
+           <li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Quản lí nhân viên</a>
+						<ul style="background:red;" class="dropdown-menu">
+							<li><a href="addSanPham.html">Thêm nhân viên</a></li>
+							<li><a href="">Xóa nhân viên</a></li>
+							<li><a href="">Sửa nhân viên</a></li>
+						</ul>
+					</li>
+            <li><a href="">Quản lí user</a></li>
+       		 <li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Quản lí bài viết</a>
+						<ul style="background:red;" class="dropdown-menu">
+							<li><a href="addSanPham.html">Thêm bài viết</a></li>
+							<li><a href="">Xóa bài viết</a></li>
+							<li><a href="">Sửa bài viết</a></li>
+						</ul>
+					</li>
+          </ul>
+          
+          <ul class="nav nav-sidebar">
+            <li><a href="">Quản kho</a></li>
+            <li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Quản lí sản phẩm</a>
+						<ul style="background:red;" class="dropdown-menu">
+							<li><a href="addSanPham.html">Thêm Sản Phẩm</a></li>
+							<li><a href="">Xóa Sản Phẩm</a></li>
+							<li><a href="">Sửa Sản Phẩm</a></li>
+						</ul>
+					</li>
+          </ul>
+        </div><!-- end left -->
+		
+		 <div class="col-xs-12 col-sm-10 col-md-10 main">
+          <h3 class="page-header">ReView All Use</h3>
+		<table class="table table table-bordered">
+			<thead>
+				<tr>
+					<th>Họ & tên</th>
+					<th>Phái</th>
+					<th>SDT</th>
+					<th>Địa chỉ</th>
+					<th>Edit</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Nguyễn Văn Khương</td>
+					<td>Nam</td>
+					<td>0306171362</td>
+					<td>290/66 Nơ trang Long , P12 , Quận Bình thạnh , Tp.HCM</td>
+					<td>
+						<button type="button" class="btn btn-default">Edit</button>
+						<button type="button" class="btn btn-default">Xóa</button>
+					</td>
+				</tr>
+				<tr>
+					<td>Liêu Trần Hiếu Hoài</td>
+					<td>Nam</td>
+					<td>0306171345</td>
+					<td>290/66 Nơ trang Long , P12 , Quận Bình thạnh , Tp.HCM</td>
+					<td>
+						<button type="button" class="btn btn-default">Edit</button>
+						<button type="button" class="btn btn-default">Xóa</button>
+					</td>
+				</tr>
+				<tr>
+					<td>Trần Quốc Đạt</td>
+					<td>Nam</td>
+					<td>0306171337</td>
+					<td>290/66 Nơ trang Long , P12 , Quận Bình thạnh , Tp.HCM</td>
+					<td>
+						<button type="button" class="btn btn-default">Edit</button>
+						<button type="button" class="btn btn-default">Xóa</button>
+					</td>
+				</tr>
+				<tr>
+					<td>Nguyễn Văn Khương</td>
+					<td>Nam</td>
+					<td>0306171362</td>
+					<td>290/66 Nơ trang Long , P12 , Quận Bình thạnh , Tp.HCM</td>
+					<td>
+						<button type="button" class="btn btn-default">Edit</button>
+						<button type="button" class="btn btn-default">Xóa</button>
+					</td>
+				</tr>
+				<tr>
+					<td>Nguyễn Văn Khương</td>
+					<td>Nam</td>
+					<td>0306171362</td>
+					<td>290/66 Nơ trang Long , P12 , Quận Bình thạnh , Tp.HCM</td>
+					<td>
+						<button type="button" class="btn btn-default">Edit</button>
+						<button type="button" class="btn btn-default">Xóa</button>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="row">
+		<div class="btn-group col-md-offset-4" role="group" aria-label="...">
+ 			 	<button type="button" class="btn btn-default">1</button>
+ 				<button type="button" class="btn btn-default">2</button>
+  				<button type="button" class="btn btn-default">3</button>
+  				<button type="button" class="btn btn-default">4</button>
+ 				<button type="button" class="btn btn-default">5</button>
+  				<button type="button" class="btn btn-default">6</button>
+
+  				<a href="trangchu.html" ><button type="button" style="background-color: green;color:white" class="btn btn-default">về trang chủ</button></a>
+		</div><!-- end btn -->
+		</div><!-- end row -->
+        </div><!-- end right -->
+		
+	  </div><!-- end row -->
+
+	</div>  
+
+
+</body>
+</html>

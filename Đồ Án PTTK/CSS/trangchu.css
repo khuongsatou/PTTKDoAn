@@ -1,0 +1,15 @@
+.col-sm-6.col-md-3{
+	width:292px !important;
+	height:422px !important;
+}
+
+.col-sm-6.col-md-3 .thumbnail{
+	white-space:nowrap;/*không cho xuống dòng*/
+	overflow:hidden;/*ẩn nếu tràng ra*/
+}
+
+
+.col-sm-6.col-md-3 .thumbnail>img{
+	width:235px;
+	height:204px;
+}

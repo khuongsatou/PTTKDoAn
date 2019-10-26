@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Title Page</title>
+		
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+		<!-- Bootstrap JavaScript -->
+		<script src="bootstrap-3.3.7-dist/js/jquery.js"></script>
+		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+		<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+		<!-- CSS -->
+ 		<link rel="stylesheet" href="CSS/login.css">
+	</head>
+	<body>
+	<div class="container">
+		<div class="row col-md-6 col-md-offset-2">
+			<form class="form_login" action="" method="POST" role="form">
+			<legend>Đăng Kí</legend>
+		
+			<div class="form-group">
+				<label for="">Họ & Tên</label>
+				<input type="text" class="form-control" id="" placeholder="Example: Nguyễn Văn Khương">
+				<form action="">
+  					<input type="radio" name="gender" value="male"> Nam
+  					<input type="radio" name="gender" value="female"> Nữ<br>
+ 				</form>
+				<label for="">Tài Khoản</label>
+				<span style="color:red;font-size:1em;">(*)</span>
+				<input type="text" class="form-control" id="ten" placeholder="">
+				<label for="">Mật Khẩu</label>
+				<span style="color:red;font-size:1em;">(*)</span>
+				<input type="password" class="form-control" id="matkhau" placeholder="">
+				<label for="">Email</label>
+				<span style="color:red;font-size:1em;">(*)</span>
+				<input type="text" class="form-control" id="" placeholder="..@gmail.com">
+				<label for="">Địa Chỉ</label>
+				<span style="color:red;font-size:1em;">(*)</span>
+				<input type="text" class="form-control" id="" placeholder="Số nhà , Xã/Đường , Quận/Huyện/Tỉnh,Thành Phố">
+				<label for="">Mã Xác Nhận:</label>
+				<span id="random"></span>
+				<span style="color: red;font-size: 1em;">(*)</span>
+				<input type="text" class="form-control" id="so" placeholder="Nhập mã xác nhận">
+				
+			</div>		
+					<input type="submit" name="" value="Đăng Kí" onclick="kiemtra();kiemtraten();" 
+				style="background-color: green;width: 100%;text-align: center;padding-top: 5px;
+		padding-bottom: 5px;color: white;">
+
+					<a href="trangchu.html"><input type="submit" name="" value="Đến Trang Chủ" style="background-color: green;width: 100%;text-align: center;padding-top: 5px;
+		padding-bottom: 5px;color: white;"></a>
+			</form>
+		</div>
+<!-- 		<div class="alert alert-danger" role="alert">
+  <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+  <span class="sr-only">Error:</span>
+  Enter a valid email address
+</div> -->
+
+
+	</div>
+	
+
+
+
+
+
+	<script >
+	
+	function random() {
+		return Math.floor((Math.random() * 1000) + 100);
+	
+	}
+			var i = random();
+	
+		
+	document.getElementById("random").innerHTML = i;
+	
+	function kiemtra() {
+		var a = document.getElementById("so").value;
+				
+		if (a != i) 
+		{
+			alert("nhập sai nhập lại");
+			
+		}
+		return ;
+	}
+	
+	function kiemtraten() {
+		var tk = document.getElementById("ten").value;
+		var mk = document.getElementById("matkhau").value;
+		if (tk==""||mk=="") 
+		{
+			alert('Vui lòng nhập đầy đủ tên và mật khẩu');
+			
+		}
+
+		if (tk!=""&&mk!="") 
+		{
+			alert('đăng kí thành công');
+			
+		}
+		return;
+	}
+	</script>
+	</body>
+</html>
